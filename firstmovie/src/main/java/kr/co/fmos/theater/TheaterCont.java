@@ -39,7 +39,7 @@ public class TheaterCont {
 		mav.addObject("theaterlist", theaterdao.regionlist(region_id));
 		mav.addObject("branchlist", theaterdao.branchlist(region_id));
 		
-		mav.setViewName("theater/list2");
+		mav.setViewName("theater/list");
 		return mav;
 	}//list() end
 	
