@@ -55,7 +55,7 @@
 				<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product">
 					<table border='1'>
 					    <tr>
-					        <th class="category_product_detail_img" rowspan="5">이미지 자리</th>
+					        <th class="category_product_detail_img" rowspan="5"><img src="${row.product_image}" alt="상품 이미지"></th>
 					    </tr>
 					    <tr>
 					        <th class="category_product_detail_naeyong">상품명</th>
