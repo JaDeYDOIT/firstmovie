@@ -5,10 +5,13 @@ pageEncoding="UTF-8"%>
 
 <div class="board_wrap">
   <div class="board_title">
+  <script>
+  	${msg1}
+  </script>
     <strong>고객센터</strong>
   </div>
   <div class="customerbutt">
-    <input type="button" value="FAQ" onclick="location.href='/customer/FAQ.do?notice_kind=0'">
+    <input type="button" value="FAQ" onclick="location.href='/customer/notice.do?notice_kind=0'">
     <input type="button" value="공지사항" onclick="location.href='/customer/notice.do?notice_kind=1'">
     <input type="button" value="1:1문의" onclick="location.href='/customer/one_inquiry.do?inquire_kind=0'">
     <input type="button" value="분실물문의" onclick="location.href='/customer/lost_inquiry.do?inquire_kind=1'">
@@ -28,17 +31,17 @@ pageEncoding="UTF-8"%>
     <div class="board_list">
       <div class="top">
         <div class="num">번호</div>
-        <div class="title" style="width: 70%">제목</div>
-        <div class="writer">글쓴이</div>
-        <div class="date">작성일</div>
+        <div class="writer">구분</div>
+        <div class="title" style="width: 80%">제목</div>
       </div>
       <div>
-        <div class="num">1</div>
-        <div class="title" style="width: 70%">
-          <a href="view.html">글 제목이 들어갑니다.</a>
+      <c:forEach items="${list}" var="row" varStatus="vs">
+		<div class="num">${vs.count}</div>
+        <div class="writer">${row.notice_type}</div>
+        <div class="title" style="width: 80%">
+          <a href="view.html">${row.notice_title}</a>
         </div>
-        <div class="writer">김이름2</div>
-        <div class="date">2021.1.15222</div>
+      </c:forEach>
       </div>
     </div>
     <div class="board_page">

@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
     <strong>고객센터</strong>
   </div>
   <div class="customerbutt">
-    <input type="button" value="FAQ" onclick="location.href='/customer/FAQ.do?notice_kind=0'">
+    <input type="button" value="FAQ" onclick="location.href='/customer/notice.do?notice_kind=0'">
     <input type="button" value="공지사항" onclick="location.href='/customer/notice.do?notice_kind=1'">
     <input type="button" value="1:1문의" onclick="location.href='/customer/one_inquiry.do?inquire_kind=0'">
     <input type="button" value="분실물문의" onclick="location.href='/customer/lost_inquiry.do?inquire_kind=1'">
@@ -60,7 +60,7 @@ pageEncoding="UTF-8"%>
       <li></li>
       <li><a href="#" class="bt last">>></a></li>
       <li>
-        <button class="gbutt">글쓰기</button>
+        <input class="gbutt" type="button" value="글쓰기" onclick="location.href='/customer/noticeForm.do'">
       </li>
     </div>
   </div>

@@ -57,7 +57,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${review}" var="row">
+					<c:forEach items="${review}" var="row" varStatus="vs">
 						<tr>
 							<td>${row.member_id}</td>
 							<td>${row.movie_review}</td>
