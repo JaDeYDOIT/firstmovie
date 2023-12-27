@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Implementation-Title: spring06_ajax
+Implementation-Version: ver 1.0
+Created-By: Maven Integration for Eclipse
+
