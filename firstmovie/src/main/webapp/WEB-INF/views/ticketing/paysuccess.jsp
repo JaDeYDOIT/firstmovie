@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="/css/dev.css">
 <link rel="stylesheet" href="/css/ticket_seat.css">
 
+<<<<<<< HEAD
+	<br>
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 	<div class="wrap_reserve">
 		<h2 class="hidden">결제완료</h2>
 		<div class="section_step_tit">

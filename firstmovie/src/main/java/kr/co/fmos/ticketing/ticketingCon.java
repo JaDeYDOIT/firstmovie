@@ -43,8 +43,27 @@ public class TicketingCon {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("ticketing/orderSettlement");
 		return mav;
+<<<<<<< HEAD
+	}//home()end
+=======
 	}//home() end
 	
+<<<<<<< HEAD
+	@GetMapping("/personseat")
+	public ModelAndView personseat() {
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("ticketing/personseat");
+		return mav;
+	}//home() end
+	
+	@GetMapping("/paysuccess")
+	public ModelAndView paysuccess() {
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("ticketing/paysuccess");
+		return mav;
+	}//home() end
+>>>>>>> 448733e68b0b24783d88d2ffc7ff5749a88582ce
+=======
 	 @GetMapping("/personseat")
 	   public ModelAndView personseat() {
 	      ModelAndView mav=new ModelAndView();
@@ -58,4 +77,5 @@ public class TicketingCon {
 	      mav.setViewName("ticketing/paysuccess");
 	      return mav;
 	   }//home() end
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 }

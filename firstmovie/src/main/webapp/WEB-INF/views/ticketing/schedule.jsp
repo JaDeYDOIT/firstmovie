@@ -26,7 +26,7 @@
 
 </head>
 <body>
-	<div id="contents" class="contents_full contents_reserve" style="">
+		<br>
 		<div class="wrap_reserve">
 			<h2 class="hidden">예매하기</h2>
 			<div class="section_step_tit">
@@ -429,8 +429,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
+		<br>
+
 
 	<%@ include file="../footer.jsp"%>
 </body>

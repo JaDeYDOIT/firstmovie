@@ -131,7 +131,79 @@ div {
 .info_use_wrap {
     overflow: hidden;
     width: 100%;
+<<<<<<< HEAD
+}
+
+.category_product_detail_title {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 28px;
+    color: #000;
+    border-bottom: 1px solid #999;
+    margin-top: 20px;
+}
+.category_product_detail_packege{
+	display: flex;
+}
+.category_product_detail_img {
+	width: 50%;
+}
+
+.category_product_detail_img img{
+	width: 100%;
+}
+
+.category_product_detail_txt {
+	width: 50%;
+	margin-top: 10px;
+	font-size: 18px;
+}
+.category_product_detail_naeyong{
+	height: 70%;
+}
+.category_product_detail_naeyong li{
+	padding: 1%;
+	font-size: 18px;
+}
+.category_product_detail_naeyong li:nth-child(1){
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+.category_product_button {
+	height: 20%;
+	justify-content: space-around;
+	display: flex;
+}
+
+button:hover a{
+	 color: #2698cb;
+}
+
+button{
+  background-color: #373e46;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button > a {
+	color: white;
+}
+
+@media screen and  (max-width:600px){
+    .category_product_detail_naeyong li{
+        font-size: 14px;
+    }
+}
+=======
     margin: 0 auto;
     border-top: 1px solid #b2b2b2;
     border-bottom: 1px solid #b2b2b2;
 }
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0

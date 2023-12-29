@@ -8,16 +8,25 @@
 <!-- 실컨텐츠 시작 -->
 <div class="movie_chart_wrap">
 	<!-- Heading Map Multi -->
-	<h3>무비차트</h3>
+	<h2>무비차트</h2>
 
 	<div class="submenu">
 		<ul>
+<<<<<<< HEAD
+			<li><a href="" title="선택">예매율순</a></li>
+			<li><a href="">평점순</a></li>
+			<li><a href="">관람객순</a></li>
+			<div class="insert_bt">
+				<a href="/movie/write.do">영화추가</a>
+			</div>
+=======
 			<li class="on"><a href="/movies/" title="선택">예매율순</a></li>
 			<li><a href="/movies/pre-movies.aspx">평점순</a></li>
 			<li><a href="/movies/pre-movies.aspx">관람객순</a></li>
 	<div class="insert_bt">
 		<a href="/movie/insert">영화추가</a>
 	</div>
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		</ul>
 	</div>
 

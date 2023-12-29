@@ -27,6 +27,14 @@
 	</script>
 
     <!-- 웹 폰트 -->
+     <link rel="stylesheet" href="/css/mainchart/reset19.css">
+    <link rel="stylesheet" href="/css/mainchart/style19.css">
+
+    <!-- swiperCSS -->
+<link rel="stylesheet" href="/css/mainchart/111.css">
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <!-- swiperCSS -->	
@@ -35,7 +43,10 @@
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/script.js"></script>
+<<<<<<< HEAD
+=======
     <script src="https://kit.fontawesome.com/cbc1642524.js" crossorigin="anonymous"></script>
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
     <title>영화</title>
 </head>
 
@@ -79,8 +90,13 @@
                 <div class="nav_bottom">
                     <ul class="nav_wrap">
                         <li><a href="/movie/list.do">영화</a></li>
+<<<<<<< HEAD
+                        <li><a href="/theater/list.do?region_id=region_001">극장</a></li>
+                        <li><a href="/ticketing/schedule" style="color:rgb(0, 128, 255);">예매</a></li>
+=======
                         <li><a href="/theater/list.do">극장</a></li>
                         <li><a href="#" style="color: red;">예매</a></li>
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
                         <li><a href="/product/list.do">스토어</a></li>
                         <li><a href="#">이벤트</a></li>
                         <li><a href="#">혜택</a></li>
