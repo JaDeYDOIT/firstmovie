@@ -12,7 +12,4 @@
     <p>${msg1 }</p>
     <p>${msg2 }</p>
     
-     <script>
-    window.location.href='/main';  // main 페이지로 이동
-	</script>
 <%@ include file="footer.jsp" %>

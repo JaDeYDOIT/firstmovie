@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@ include file="../header.jsp"%>
-<link rel="stylesheet" href="/css/movielist.css">
+<link rel="stylesheet" href="/css/movie.css">
 
 
 <!-- 실컨텐츠 시작 -->
@@ -15,9 +15,9 @@
 			<li class="on"><a href="/movies/" title="선택">예매율순</a></li>
 			<li><a href="/movies/pre-movies.aspx">평점순</a></li>
 			<li><a href="/movies/pre-movies.aspx">관람객순</a></li>
-			<div class="insert_bt">
-				<a href="/movie/write.do">영화추가</a>
-			</div>
+	<div class="insert_bt">
+		<a href="/movie/insert">영화추가</a>
+	</div>
 		</ul>
 	</div>
 
@@ -27,35 +27,26 @@
 				<li class="movie_item">
 					<div class='rank_box'>
 						<div class='movie_rank'>영화순위 : ${dto.movie_rank}</div>
-						<div class="movie_img">
-							<img src="${dto.movie_image}" alt="영화 이미지">
-							<div class="click_btn">
-								<button onclick="location.href='detail.do?movie_id=${dto.movie_id}'">상세보기</button>
-								<button onclick="location.href=''">예매하기</a></button>
-							</div>
-						</div>
+						<div class='movie_name'>장르 아이디 : ${dto.movie_genre_id}</div>
+						<div class="movie_img">영화이미지 : ${dto.movie_image}</div>
 						<ul>
-							<li><h3>${dto.movie_name}</h3></li>
+							<li>영화이름 : ${dto.movie_name}</li>
 							<li>상영시간 : ${dto.movie_running_time}</li>
+							<li>개봉년도 : ${dto.movie_production_year}</li>
 							<li>관람등급 : ${dto.movie_audience_rating}</li>
+							<li>감독이름 : ${dto.director_name}</li>
+							<li>배우이름 : ${dto.actor_name}</li>
 						</ul>
+
 					</div>
 				</li>
 			</c:forEach>
-		</ul><!-- movie_list -->
-	</div><!-- 	movie_chart -->
+		</ul>
+	</div>
 </div>
 
 
-<script>
-$(".movie_img").mouseover(function(){
-	$(this).find("button").show()
-})
-$(".movie_img").mouseout(function(){
-	$(this).find("button").hide()
-})
 
-</script>
 
 
 
