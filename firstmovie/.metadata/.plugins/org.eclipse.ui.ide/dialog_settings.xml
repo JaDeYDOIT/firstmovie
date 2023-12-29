@@ -42,6 +42,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\itwill\Desktop\영민_프로젝트\moive_ing"/>
+			<item value="C:\Users\itwill\Desktop\team_git\First_movie"/>
+			<item value="C:\Users\itwill\Desktop\team_git\First_movie\firstmovie"/>
 			<item value="D:\team_project\workspace\first_movie"/>
 			<item value="D:\team_project\workspace\first_movie\firstmovie"/>
 		</list>

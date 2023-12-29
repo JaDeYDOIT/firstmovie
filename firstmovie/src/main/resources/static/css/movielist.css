@@ -5,26 +5,18 @@
 	width: 100%;
 }
 
-.movie_chart_wrap h2 {
-	font-size: 40px;
-	font-weight: bold;
-	color: #22A2F2;
-}
-
 .movie_chart_wrap h3 {
-	font-size: 25px;
-	color: #22A2F2;
+	font-size: 20px;
+	color: red;
 	white-space: nowrap;/* 텍스트가 줄 바꿈되지 않도록 설정 */
 	overflow: hidden;/* 넘치는 부분을 감추기 */
 	text-overflow: ellipsis;/* 넘치는 부분에 ... 추가 */
-	font-weight: bold;
 	max-width: 210px;
 }
 .movie_chart_wrap .submenu {
 	font-size: 25px;
 	width: 100%;
 	margin-top: 30px;
-	padding-bottom: 1%;
 	border-bottom: 2px solid black;
 	position: relative;
 }
@@ -37,16 +29,19 @@
 	flex-wrap: wrap;
 }
 
-
+.movie_chart_wrap h3{
+	font-size: 30px;
+	font-weight: bold;
+}
 .insert_bt{
 	font-size: 20px;
 	position: absolute;	
 	right: 0;
-	cursor: pointer;
 }
 
 .movie_chart {
 	width: 100%;
+	padding-top: 5%;
 }
 
 .movie_list {
@@ -60,7 +55,7 @@
 	margin:5% 3%; 
 	}
 .movie_rank{
-	background-color: #22A2F2;
+	background-color: orangered;
 	color: white;
 	text-align: center;
 	font-size: 20px;
@@ -90,7 +85,6 @@
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	
 }
 .click_btn button{
 	width: 100%;
@@ -103,7 +97,6 @@
 	cursor: pointer;
 }
 .click_btn button:hover{
-	background: #22B7F2;
-	transition: 0.5s;	
-	cursor: pointer;
+	background: rgba(240, 228, 228, 0.8);
+	transition: 1s;	
 }

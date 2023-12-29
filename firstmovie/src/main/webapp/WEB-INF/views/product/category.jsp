@@ -15,13 +15,13 @@
    		<div class="category_contents_wrap">
    			<ul class="category_content">
    				<li id="cm1" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">패키지</a>
+   					<a href="/product/category.do?product_category_id=1">패키지</a>
    				</li>
    				<li id="cm2" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">영화관람권</a>
+   					<a href="/product/category.do?product_category_id=2">영화관람권</a>
    				</li>
    				<li id="cm3" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">콤보</a>
+   					<a href="/product/category.do?product_category_id=3">콤보</a>
    				</li>
    				<li id="cm4" name="categorymenu">
    					<a href="#">팝콘</a>
@@ -72,7 +72,7 @@
 								</span>
 								<span class="best_product_text_wrap">
 									<span class="best_product_text_name">${row.product_name}</span>
-									<span class="best_product_text_price">${row.product_cost}</span>
+									<span class="best_product_text_price"><fmt:formatNumber value="${row.product_cost}" pattern="#,###"/>원</span>
 								</span>
 							</a>
 						</li>

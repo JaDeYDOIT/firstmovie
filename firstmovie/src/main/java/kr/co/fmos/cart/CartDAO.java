@@ -2,13 +2,12 @@ package kr.co.fmos.cart;
 
 
 import java.util.List;
-import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Repository
 public class CartDAO {
@@ -23,11 +22,13 @@ public class CartDAO {
 		return sqlSession.insert("cart.insert", dto);
 	}//cartInsert() end
 	
-	
-	public List<CartDTO> cartList() {
-		return sqlSession.selectList("cart.list");
+	public List<CartDTO> cartList(String member_id) {
+		return sqlSession.selectList("cart.list", member_id);
+		
 	}//list() end
 	
-	
+	public int cartDelete(int payment_detail_id) { 
+		return sqlSession.delete("cart.delete", payment_detail_id); 
+	}//delete() end
 	
 }//class end

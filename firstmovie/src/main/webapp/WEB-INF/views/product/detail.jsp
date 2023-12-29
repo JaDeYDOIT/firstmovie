@@ -2,6 +2,16 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp" %>
 <link rel="stylesheet" href="/css/store.css">
+<script>
+	function product_cart(){
+	  		 if($("#product_count").val()=="0"){
+	  			alert("상품수량을 선택해주세요~");
+	  		}else {
+	  			document.detailfrm.action="/cart/insert.do";
+	  			document.detailfrm.submit();
+	  		}//if end
+	  	}//product_cart() end
+</script>
 
 <!-- contents 시작 -->
   <div id="contents">
@@ -15,13 +25,13 @@
    		<div class="category_contents_wrap">
    			<ul class="category_content">
    				<li id="cm1" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">패키지</a>
+   					<a href="/product/category.do?product_category_id=1">패키지</a>
    				</li>
    				<li id="cm2" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">영화관람권</a>
+   					<a href="/product/category.do?product_category_id=2">영화관람권</a>
    				</li>
    				<li id="cm3" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=${list.product_category_id}">콤보</a>
+   					<a href="/product/category.do?product_category_id=3">콤보</a>
    				</li>
    				<li id="cm4" name="categorymenu">
    					<a href="#">팝콘</a>
@@ -48,22 +58,22 @@
 	<!-- category_product_detail_wrap 시작 -->
 	<div class="category_product_detail_wrap">
 		<div class="category_product_detail_package">
-		<form name="detailfrm" id="detailfrm" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="product_id" value="${product_id}">
+		<form name="detailfrm" id="detailfrm" method="post">
+		<input type="hidden" name="product_id" value="${product_id.product_id}">
 		<c:forEach items="${detail}" var="row" varStatus="vs">
 			<li class="active">
-				<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product">
-					<table border='1'>
+				<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product"></a>
+					<table>
 					    <tr>
-					        <th class="category_product_detail_img" rowspan="5"><img src="${row.product_image}" alt="상품 이미지"></th>
+					        <th class="category_product_detail_img" rowspan="6"><img src="${row.product_image}" alt="상품 이미지"></th>
 					    </tr>
 					    <tr>
 					        <th class="category_product_detail_naeyong">상품명</th>
-					        <td class="category_product_detail_txt" colspan="2">${row.product_name}</td>
+					        <td class="category_product_detail_txt" colspan="3">${row.product_name}</td>
 					    </tr>
 					    <tr>
 					        <th class="category_product_detail_naeyong">상품구성</th>
-					        <td class="category_product_detail_txt" colspan="2">${row.product_content}</td>
+					        <td class="category_product_detail_txt" colspan="3">${row.product_content}</td>
 					    </tr>
 					    <tr>
 					        <th class="category_product_detail_naeyong">금액</th>
@@ -72,9 +82,9 @@
 					        </td>
 					    </tr>
 					    <tr>
-							<td>상품수량</td>
+							<td  class="category_product_detail_naeyong">상품수량</td>
 							<td>
-								<select id="qty" name="qty">
+								<select id="product_count" name="product_count">
 									<option value="0">★선택★</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -85,34 +95,18 @@
 							</td>
 				    	</tr>
 					</table>
-				</a>
 			</li>
 		</c:forEach>
-		<div class="btn_category_qty">
-		<tr>
-			<td>상품수량</td>
-			<td>
-				<select id="qty" name="qty" class="form-control">
-					<option value="0">★선택★</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</td>
-    	</tr>
-    	</div>
 			<div class="category_product_button">
-				<button>
-					<value="장바구니" onclick="location.href='/cart/list.do'">장바구니</a>
-				</button>
-				<button>
-					<value="구매하기" onclick="location.href='/order/confirm.do'">구매하기</a>
-				</button>
+				 <tr>
+					<td colpsan="2" align="center" class="category_product_button">
+						<input type="button" value="장바구니" onclick="return product_cart()">
+						<input type="button" value="구매하기" onclick="location.href='/order/confirm.do'">
+					</td>
+				</tr> 
 			</div>
-		</div>
 		</form>	
+		</div>
 	</div>
 		<!-- category_product_detail_wrap 끝 -->
 	</div>

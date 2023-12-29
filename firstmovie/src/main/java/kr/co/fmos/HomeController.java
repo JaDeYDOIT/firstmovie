@@ -27,7 +27,7 @@ public class HomeController {
 		}
 	    
      ModelAndView mav = new ModelAndView();
-     //redirect : 등록한 명령어를 호출하 수 
+     //redirect : 등록한 명령어를 호출할 수 있다
      mav.setViewName("main");
      return mav;
 	}//home() end
