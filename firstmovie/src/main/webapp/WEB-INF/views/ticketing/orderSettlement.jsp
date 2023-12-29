@@ -31,10 +31,6 @@
 		<div class="wrap_reserve ">
 			<h2 class="hidden">예매하기</h2>
 			<div class="section_step_tit">
-				ㄱㄱㄱ
-				ㄱㄱㄱ
-				ㄱㄱㄱ
-				ㄱㄱㄱ
 				<ul>
 					<li class="step01 prev"><a href="#"><strong class="tit"><span>01</span><br>상영시간</strong>
 					</a></li>
