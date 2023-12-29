@@ -70,13 +70,13 @@ $(document).ready(
 			});
 	});
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 	$('.cinemaSelect .depth2 li, .movie_select_wrap li').click(function() {
-		 var showingTimeParam = {
-                branchID: selectedBranchID,
-                movieID: selectedMovieID
-            };
-		
+		var showingTimeParam = {
+			branchID: selectedBranchID,
+			movieID: selectedMovieID
+		};
+
 		$.ajax({
 			type: "POST",
 			contentType: "application/json",
@@ -91,4 +91,4 @@ $(document).ready(
 			}
 		});
 	});
-});*/
+});
