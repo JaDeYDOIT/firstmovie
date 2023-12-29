@@ -24,5 +24,5 @@ public class ticketingCon {
 		ModelAndView mav=new ModelAndView();
 		mav.setViewName("ticketing/orderSettlement");
 		return mav;
-	}//home() end
+	}//home()end
 }
