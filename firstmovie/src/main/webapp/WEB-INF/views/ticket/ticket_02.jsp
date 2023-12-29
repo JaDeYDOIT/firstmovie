@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/dev.css">
 <link rel="stylesheet" href="/css/ticket_seat.css">
 
-<script>
+<script>안영조재고재돚배
 	document.addEventListener("DOMContentLoaded", function() {
 		// 감소 버튼 클릭 시
 		document.querySelectorAll('.btn_mins').forEach(function(btn) {
