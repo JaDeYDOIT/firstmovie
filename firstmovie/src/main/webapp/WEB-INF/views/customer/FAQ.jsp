@@ -5,16 +5,13 @@ pageEncoding="UTF-8"%>
 
 <div class="board_wrap">
   <div class="board_title">
-  <script>
-  	${msg1}
-  </script>
-    <strong>고객센터</strong>
+    <strong>고객센터${msg1}</strong>
   </div>
   <div class="customerbutt">
     <input type="button" value="FAQ" onclick="location.href='/customer/notice.do?notice_kind=0'">
     <input type="button" value="공지사항" onclick="location.href='/customer/notice.do?notice_kind=1'">
-    <input type="button" value="1:1문의" onclick="location.href='/customer/one_inquiry.do?inquire_kind=0'">
-    <input type="button" value="분실물문의" onclick="location.href='/customer/lost_inquiry.do?inquire_kind=1'">
+    <input type="button" value="1:1문의" onclick="location.href='/customer/inquire.do?inquire_kind=0'">
+    <input type="button" value="분실물문의" onclick="location.href='/customer/inquire.do?inquire_kind=1'">
     <input type="button" value="대관문의" onclick="location.href='/customer/rental_inquiry.do'">
   </div>
   <div class="selectbox">

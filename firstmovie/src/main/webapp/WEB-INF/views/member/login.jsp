@@ -10,7 +10,7 @@
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <!-- 카카오 로그인에 필요한 라이브러리 끝 -->
 <!-- 구글 로그인에 필요한 라이브러리 시작 -->
-<!-- <meta name ="google-signin-client_id" content="735176904148-sao9i6bkcrquin8d5e2v0m0fnfint3uk.apps.googleusercontent.com"> -->
+<meta name ="google-signin-client_id" content="735176904148-sao9i6bkcrquin8d5e2v0m0fnfint3uk.apps.googleusercontent.com">
 <!-- 구글 로그인에 필요한 라이브러리 끝 -->
 
 	 <form method="post" id="myForm" action="login.do" onsubmit="return logincheck();"><!-- <form> 시작 -->
@@ -163,7 +163,6 @@
                         '&member_email=' + encodeURIComponent(member_email);
                         '&member_gender=' + encodeURIComponent(member_gender);
         				 window.location.href = redirectUrl;
-        				 
        	            }
                 });
             }

@@ -10,8 +10,8 @@ pageEncoding="UTF-8"%>
   <div class="customerbutt">
     <input type="button" value="FAQ" onclick="location.href='/customer/notice.do?notice_kind=0'">
     <input type="button" value="공지사항" onclick="location.href='/customer/notice.do?notice_kind=1'">
-    <input type="button" value="1:1문의" onclick="location.href='/customer/one_inquiry.do?inquire_kind=0'">
-    <input type="button" value="분실물문의" onclick="location.href='/customer/lost_inquiry.do?inquire_kind=1'">
+    <input type="button" value="1:1문의" onclick="location.href='/customer/inquire.do?inquire_kind=0'">
+    <input type="button" value="분실물문의" onclick="location.href='/customer/inquire.do?inquire_kind=1'">
     <input type="button" value="대관문의" onclick="location.href='/customer/rental_inquiry.do'">
   </div>
   <div class="selectbox">
@@ -62,7 +62,7 @@ pageEncoding="UTF-8"%>
       <li></li>
       <li><a href="#" class="bt last">>></a></li>
       <li>
-        <input class="gbutt" type="button" value="글쓰기" onclick="location.href='/customer/noticeForm.do'">
+        <input class="gbutt" type="button" value="글쓰기" onclick="location.href='/customer/lost_inquiryForm.do'">
       </li>
     </div>
   </div>

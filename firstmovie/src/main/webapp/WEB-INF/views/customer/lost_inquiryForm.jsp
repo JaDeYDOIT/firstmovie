@@ -8,10 +8,6 @@
  	<tr>
  		<th>문의유형</th>
  		<td>
- 		<select class="notice_kind" name="notice_kind">
- 			<option value="0">FAQ</option>
- 			<option value="1">공지사항</option>
- 		</select>
  		<select name="notice_type">
  			<option value="영화관이용관련">영화관이용관련</option>
  			<option value="대관문의관련">대관문의관련</option>

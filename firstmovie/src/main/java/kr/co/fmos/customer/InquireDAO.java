@@ -29,4 +29,8 @@ public class InquireDAO {
 		return sqlSession.selectList("customer.lostselect", inquire_kind);
 	}// movieList() end
 	
+	public int oneInquireins(InquireDTO dto) {
+		return sqlSession.insert("customer.oneinquireins", dto);
+	}
+	
 }//class end
