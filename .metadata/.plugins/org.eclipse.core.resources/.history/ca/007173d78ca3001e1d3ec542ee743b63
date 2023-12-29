@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<!-- content에 자신의 OAuth2.0 클라이언트ID를 넣습니다. -->
+<meta name ="google-signin-client_id" content="735176904148-sao9i6bkcrquin8d5e2v0m0fnfint3uk.apps.googleusercontent.com">
+</head>
+<body>
+<ul>
+ <li id="GgCustomLogin">
+  <a href="javascript:void(0)">
+   <span>Login with Google</span>
+  </a>
+ </li>
+</ul>
+
+</body>
+</html>

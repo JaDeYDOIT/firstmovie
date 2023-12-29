@@ -1,0 +1,27 @@
+package kr.co.fmos.customer;
+
+import java.sql.Date;
+
+public class TestDTO {
+
+	private Date testdate;
+
+	public TestDTO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Date getTestdate() {
+		return testdate;
+	}
+
+	public void setTestdate(Date testdate) {
+		this.testdate = testdate;
+	}
+
+	@Override
+	public String toString() {
+		return "TestDTO [testdate=" + testdate + "]";
+	}
+	
+}

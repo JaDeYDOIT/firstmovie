@@ -1,0 +1,22 @@
+package kr.co.fmos.customer;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import kr.co.fmos.member.MemberDTO;
+
+@Repository
+public class noticeDAO {
+
+	public noticeDAO() {
+		System.out.println("-----noticeDAO()객체 생성됨");
+	}//end
+	
+	@Autowired
+	SqlSession sqlSession;
+	
+	public int noticeInsert(MemberDTO dto) {
+		return sqlSession.insert("member.insert", dto);
+	}//insert() end
+}
