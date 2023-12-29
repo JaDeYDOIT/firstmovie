@@ -2,9 +2,12 @@ package kr.co.fmos.cart;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+=======
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -22,6 +25,7 @@ public class CartCont {
 	@Autowired
 	private CartDAO cartDao;
 	
+<<<<<<< HEAD
 	@PostMapping("/insert.do")
 	public String cartInsert(@ModelAttribute CartDTO cartDto, HttpSession session) {
 		cartDto.setMember_id((String)session.getAttribute("s_id"));
@@ -39,6 +43,14 @@ public class CartCont {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("cart/list");
 		mav.addObject("list", cartDao.cartList(s_id));
+=======
+	@RequestMapping("/list")
+	public ModelAndView list(HttpSession session) {
+		String 회원아이디 = "";
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("cart/list");
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 		return mav;
 	}//list() end
 	

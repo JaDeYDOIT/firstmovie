@@ -1,5 +1,6 @@
 package kr.co.fmos.order;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,4 +52,8 @@ public class OrderCont {
 	
 	
 	
+=======
+public class OrderCont {
+
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 }//class end

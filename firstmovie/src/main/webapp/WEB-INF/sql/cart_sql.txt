@@ -14,3 +14,4 @@ create sequence cart_payment_detail_seq
 start with 1
 increment by 1
 cycle;
+--이응

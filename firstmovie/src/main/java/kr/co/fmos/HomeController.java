@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import jakarta.servlet.http.HttpSession;
-
 @Controller
 public class HomeController {
     
@@ -16,16 +14,7 @@ public class HomeController {
     //first movie 프로젝트의 첫페이지 호출
     //-> http://localhost:9095/main    
 	@RequestMapping("/main")
-	public ModelAndView home(HttpSession session ) {
-		if(session.getAttribute("s_id") == null || session.getAttribute("s_pw") == null ||
-		session.getAttribute("s_id").equals("") || session.getAttribute("s_pw").equals("")) 
-		{
-			String s_id = "guest";
-			String s_pw = "guest";
-			session.setAttribute("s_id", s_id);
-			session.setAttribute("s_pw", s_pw);
-		}
-	    
+	public ModelAndView home() {		
      ModelAndView mav = new ModelAndView();
      //redirect : 등록한 명령어를 호출할 수 있다
      mav.setViewName("main");

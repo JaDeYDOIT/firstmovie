@@ -5,17 +5,12 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Controller
 public class TheaterDAO {
 
-	// sql연결	
 	@Autowired
-	SqlSession sqlSession;
-	
 	private JdbcTemplate jt;
 	
 	private StringBuilder sql = null;

@@ -3,49 +3,42 @@
 <%@ include file="../header.jsp" %>
 <link rel="stylesheet" href="/css/customer/notice.css" />
 
+<form name="noticefm" method="post" action="/customer/noticeinsert.do">
  <table>
  	<tr>
  		<th>문의유형</th>
  		<td>
- 		<select class="inquirysel">
- 			<option>1:1문의</option>
- 			<option>분실물문의</option>
+ 		<select class="notice_kind" name="notice_kind">
+ 			<option value="0">FAQ</option>
+ 			<option value="1">공지사항</option>
+ 		</select>
+ 		<select name="notice_type">
+ 			<option value="영화관이용관련">영화관이용관련</option>
+ 			<option value="대관문의관련">대관문의관련</option>
+ 			<option value="결제관련">결제관련</option>
  		</select>
  		</td>
  	</tr>
  	<tr>
- 		<th>이름</th>
- 		<td><input type="text" class="nameinp"></td>
- 	</tr>
- 	<tr>
- 		<th>이메일</th>
- 		<td><input type="text" class="emailinp"></td>
- 	</tr>
- 	<tr>
- 		<th>휴대전화</th>
- 		<td class="phoneinp">
-	 		<input type="number"><span>-</span>
-	 		<input type="number"><span>-</span>
- 			<input type="number">
- 		</td>
- 	</tr>
- 	<tr>
  		<th>제목</th>
- 		<td><input type="text" class="titleinp"></td>
+ 		<td><input type="text" class="titleinp" name="notice_title"></td>
  	</tr>
  	<tr>
  		<th>내용</th>
- 		<td><input type="text" class="contentinp"></td>
- 	</tr>
- 	<tr>
- 		<th>사진첨부</th>
- 		<td><input type="file" class="photoinp"></td>
+ 		<!-- <td><input type="text" class="contentinp" name="inquire_content"></td> -->
+ 		<td><textarea class="contentinp" name="notice_content"></textarea></td>
  	</tr>
  </table>
  	<div class="button_wrap">
-		<input type="button" value="등록하기"> 	
-		<input type="button" value="취소하기">
+		<input type="submit" value="등록하기"> 	
+		<input type="button" value="취소하기" onclick="goBack()">
 	</div>
+</form>
+	<script>
+        function goBack() {
+        	window.location.href = "/customer/notice.do?notice_kind=0";
+        }
+    </script>
 <%@ include file="../footer.jsp" %>
 
 

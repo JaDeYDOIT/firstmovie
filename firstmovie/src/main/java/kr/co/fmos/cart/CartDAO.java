@@ -1,5 +1,6 @@
 package kr.co.fmos.cart;
 
+<<<<<<< HEAD
 
 import java.util.List;
 
@@ -8,12 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import jakarta.servlet.http.HttpServletRequest;
+=======
+import org.springframework.stereotype.Repository;
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 
 @Repository
 public class CartDAO {
 	public CartDAO() {
 		System.out.println("-----CartDAO()객체 생성됨");
 	}//end
+<<<<<<< HEAD
 	
 	@Autowired
 	SqlSession sqlSession;
@@ -31,4 +36,6 @@ public class CartDAO {
 		return sqlSession.delete("cart.delete", payment_detail_id); 
 	}//delete() end
 	
+=======
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 }//class end

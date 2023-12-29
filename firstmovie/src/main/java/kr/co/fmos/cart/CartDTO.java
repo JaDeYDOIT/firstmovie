@@ -1,5 +1,6 @@
 package kr.co.fmos.cart;
 
+<<<<<<< HEAD
 import kr.co.fmos.product.ProductDTO;
 
 public class CartDTO extends ProductDTO {
@@ -42,3 +43,8 @@ public class CartDTO extends ProductDTO {
 				+ product_count + ", member_id=" + member_id + "]";
 	}
 }//class end
+=======
+public class CartDTO {
+
+}
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888

@@ -11,7 +11,11 @@
 <link rel="stylesheet" href="/css/dev.css">
 <link rel="stylesheet" href="/css/ticket_seat.css">
 
+<<<<<<< HEAD
 <script>
+=======
+<script>안영조재고재돚배
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 	document.addEventListener("DOMContentLoaded", function() {
 		// 감소 버튼 클릭 시
 		document.querySelectorAll('.btn_mins').forEach(function(btn) {
@@ -28,7 +32,11 @@
 		});
 
 		// 행과 열의 개수 설정
+<<<<<<< HEAD
 		var numRows = 8; // 예시로 5개의 행 사용
+=======
+		var numRows = 5; // 예시로 5개의 행 사용
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		var numCols = 10; // 예시로 10개의 열 사용
 
 		var emptySeats = [ {
@@ -39,15 +47,22 @@
 			row : 3,
 			col : 8
 		}, // 두 번째 빈 좌석 위치
+<<<<<<< HEAD
 		{
 			row : 1,
 			col : 4
 		}, // 세 번째 빈 좌석 위치
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		// 추가적인 빈 좌석은 필요에 따라 배열에 계속 추가
 		];
 
 		var seatContainer = document.querySelector('.seat-container');
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		// 좌석 생성 반복문
 		for (var row = 1; row <= numRows; row++) {
 			// 행 간격 추가
@@ -105,6 +120,7 @@
 				var seatTextElement = document.createElement('span');
 				seatTextElement.className = "f1";
 				seatTextElement.textContent = col;
+<<<<<<< HEAD
 				
 				 // 좌석에 클릭 이벤트 추가 (클로저 사용) - 좌석 dto
 		        (function (row, col, seatNumber) {
@@ -134,6 +150,8 @@
 		                console.log("Selected Seats:", selectedSeats);
 		            });
 		        })(row, col, seatNumber);
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 
 				// 좌석에 텍스트 추가
 				seatElement.appendChild(seatTextElement);
@@ -163,15 +181,22 @@
 
 	// totalCount 변수에 접근할 때 totalCountProxy를 사용
 	var totalCount = 0;
+<<<<<<< HEAD
 	
 	// 클릭된 좌석들을 저장할 배열 - 좌석 dto 관련
 	var selectedSeats = [];
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 
 	function checkSeatSelectionStatus() {
 		// seat 클래스를 가진 모든 div 요소를 선택
 		var seatElements = document.querySelectorAll('.seat');
 
+<<<<<<< HEAD
 		// 좌석 갯수만큼 다 선택하면 no_select 아니면 헤제
+=======
+		// 좌석 갯수만큼 다 선택하면 no_selected 아니면 헤제
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		if (totalCount == document.querySelectorAll('.selected').length) {
 			// 각 seat 요소에 대해 처리
 			seatElements.forEach(function(seatElement) {
@@ -190,7 +215,11 @@
 	}
 
 	function deselectAllSeats() {
+<<<<<<< HEAD
 		// totalcount가 1에서 0으로 갈 때 select 되어 있는 것도 삭제해야 함
+=======
+		// totalcount가 1에서 0으로 갈 때 selected 되어 있는 것도 삭제해야 함
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 		var seatElements = document.querySelectorAll('.seat');
 
 		seatElements.forEach(function(seatElement) {
@@ -212,6 +241,7 @@
 
 		countElement.textContent = currentCount;
 		checkSeatSelectionStatus();
+<<<<<<< HEAD
 		deselectAllSeats(); //수가 변경될 때마다 좌석 reset
 		updateMessage("좌석 선택 후 결제하기 버튼을 클릭하세요");
 		countDeselectAllSeats();
@@ -222,6 +252,12 @@
 	    selectedSeats = [];
 	}
 	
+=======
+		deselectAllSeats();
+		updateMessage("좌석 선택 후 결제하기 버튼을 클릭하세요");
+	}
+
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 	// 메시지 업데이트 함수
 	function updateMessage(newMessage) {
 		var messageElement = document.getElementById('ticketMessageInfo');
@@ -270,12 +306,19 @@
 	}
 </script>
 
+<<<<<<< HEAD
 <br>
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 <div class="wrap_reserve">
 	<h2 class="hidden">예매하기</h2>
 	<div id="PersonSeatHeader" class="section_step_tit">
 		<ul>
+<<<<<<< HEAD
 			<li class="step01 prev"><a href="/ticketing/schedule"><strong
+=======
+			<li class="step01 prev"><a href="#reserveStep01"><strong
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 					class="tit"><span>01</span><br>상영시간</strong>
 					<div class="bx_con">
 						<dl>
@@ -338,7 +381,10 @@
 						<h5 class="hidden">인원선택</h5>
 						<div class="movie_infor">
 							<h6 class="hidden">예매 정보</h6>
+<<<<<<< HEAD
 							
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 							<span class="thm"><img
 								src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202311/20443_103_1.jpg"></span>
 							<div class="group_infor">
@@ -422,7 +468,10 @@
 																style="margin-top: 50px; width: 473px; height: 358px;">
 																<!-- HTML -->
 																<div class="seat-container">
+<<<<<<< HEAD
 																
+=======
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 																	<!-- 좌석 생성을 위한 컨테이너 -->
 																</div>
 																<div class="seat_btm_box">
@@ -483,7 +532,11 @@
 						</div>
 						<form id="paymentForm" onsubmit="return validateForm()">
 							<div class="group_rgt">
+<<<<<<< HEAD
 								<a href="/ticketing/orderSettlement" class="btn_col1" id="link_rpay">결제하기</a>
+=======
+								<a href="#" class="btn_col1" id="link_rpay">결제하기</a>
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 							</div>
 						</form>
 					</div>

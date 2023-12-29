@@ -2,17 +2,8 @@ package kr.co.fmos.member;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-
-import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/member")
@@ -88,7 +79,7 @@ public class MemberCont {
 			 mav.addObject("msg1", "<script>alert('아이디 혹은 비밀번호가 틀렸습니다.')</script>");
 			 mav.addObject("msg2", check);
 		 }
-		 mav.setViewName("msgView"); 
+		 mav.setViewName("logmsgView"); 
 		 return mav; 
 	 }
 	 	
@@ -98,7 +89,7 @@ public class MemberCont {
 		mav.addObject("msg1", "<script>alert('로그아웃 되셨습니다.')</script>");
 		session.removeAttribute("s_id");
 		session.removeAttribute("s_pw");
-		mav.setViewName("msgView");
+		mav.setViewName("logmsgView");
 		return mav;
 	}
 	
@@ -117,8 +108,16 @@ public class MemberCont {
 			session.setAttribute("s_id", dto.getMember_email());
 	    }
 
+<<<<<<< HEAD
 		mav.setViewName("msgView");
+=======
+		mav.setViewName("logmsgView");
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 		return mav;
 	}
 	
+	@GetMapping("/test.do")
+	public String test() {
+		return "/member/test";
+	}
 }//class end

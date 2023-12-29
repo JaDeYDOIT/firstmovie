@@ -95,7 +95,7 @@
 			    <select id="creditCardType" name="creditCardType">
 			      <option value="0">선택</option>
 			      <option value="1">신한카드</option>
-			      <option value="2">현대카드</option>
+			      <option value="2">현대카드.</option>
 			      <option value="3">삼성카드.</option>
 			    </select>
 			    <label>

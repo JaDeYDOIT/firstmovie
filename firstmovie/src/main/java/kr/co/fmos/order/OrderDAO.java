@@ -1,5 +1,6 @@
 package kr.co.fmos.order;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -37,4 +38,8 @@ public class OrderDAO {
 	 * public List<MemberDTO> consumerlist(String member_id) { return
 	 * sqlSession.selectList("order.consumerlist", member_id); }//consumerlist() end
 	 */	
+=======
+public class OrderDAO {
+
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 }//class end
