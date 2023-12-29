@@ -43,7 +43,7 @@
     <script src="/js/script.js"></script>
     <title>영화</title>
 </head>
-
+ 
 <body>
     <div id="wrap">
         <header>

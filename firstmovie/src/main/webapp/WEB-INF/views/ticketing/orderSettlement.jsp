@@ -33,6 +33,7 @@
 			<div class="section_step_tit">
 				<ul>
 					<li class="step01 prev"><a href="#"><strong class="tit"><span>01</span><br>상영시간</strong>
+<<<<<<< HEAD
 							<div class="bx_con">
 								<dl>
 									<dt>선택한 영화 제목</dt>
@@ -65,6 +66,13 @@
 									<dd>18,000원</dd>
 								</dl>
 							</div></a></li>
+=======
+					</a></li>
+					<li class="step02 prev"><a href="#"><strong class="tit"><span>02</span><br>인원/좌석</strong>
+					</a></li>
+					<li class="step03 active"><a href="#"><strong class="tit"><span>03</span><br>결제</strong>
+					</a></li>
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 					<li><a href="#" style="cursor: default;"><strong
 							class="tit"><span>04</span><br>결제완료</strong></a></li>
 				</ul>
@@ -111,7 +119,6 @@
 				<div class="article article_pay_method">
 					<div class="group_top">
 						<h4 class="tit">결제수단</h4>
-						<button type="button" class="btn_txt_reset">초기화</button>
 					</div>
 					<div class="inner">
 						<div class="group_discount" style="display: block;">

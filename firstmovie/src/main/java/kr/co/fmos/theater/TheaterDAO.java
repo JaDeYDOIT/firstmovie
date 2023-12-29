@@ -11,10 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class TheaterDAO {
 
-	// sql연결	
 	@Autowired
-	SqlSession sqlSession;
-	
 	private JdbcTemplate jt;
 	
 	private StringBuilder sql = null;

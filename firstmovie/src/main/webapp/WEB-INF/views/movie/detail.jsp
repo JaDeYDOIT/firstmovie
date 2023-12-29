@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp"%>
-<link rel="stylesheet" href="/css/moviedetail.css">
+    pageEncoding="UTF-8"%>
+<%@ include file="../header.jsp" %>
 
 <div class="movie_detail_wrap">
 	<div class='movie_detail'>
@@ -57,7 +56,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${review}" var="row" varStatus="vs">
+					<c:forEach items="${review}" var="row">
 						<tr>
 							<td>${row.member_id}</td>
 							<td>${row.movie_review}</td>

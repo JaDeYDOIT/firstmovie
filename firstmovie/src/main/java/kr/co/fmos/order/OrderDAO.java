@@ -1,8 +1,14 @@
 package kr.co.fmos.order;
 
+<<<<<<< HEAD
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import kr.co.fmos.member.MemberDTO;
+
 
 @Repository
 public class OrderDAO {
@@ -12,6 +18,28 @@ public class OrderDAO {
 	
 	@Autowired
 	SqlSession sqlSession;
+
+	 /*
+	 public String orderno(String cdate) { return
+	 sqlSession.selectOne("order.orderno", cdate); }//orderno() end
+	 */
+	
+	public int totalmoney(String member_id) {
+		return sqlSession.selectOne("order.totalmoney", member_id);
+	}//totalamount() end
 	
 	
+	public MemberDTO consumerlist(String member_id) {
+		return sqlSession.selectOne("order.consumerlist", member_id);
+	}//consumerlist() end
+	
+	
+	/*
+	 * public List<MemberDTO> consumerlist(String member_id) { return
+	 * sqlSession.selectList("order.consumerlist", member_id); }//consumerlist() end
+	 */	
+=======
+public class OrderDAO {
+
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
 }//class end

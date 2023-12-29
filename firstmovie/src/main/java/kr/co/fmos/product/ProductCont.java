@@ -25,8 +25,13 @@ public class ProductCont {
 		return mav;
 	}//list() end
 	
+<<<<<<< HEAD
 	@GetMapping("/detail.do")
 	public ModelAndView detail() {
+=======
+	@GetMapping("/detail/{product_category_id}")
+	public ModelAndView detail(@PathVariable int product_category_id) {
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("product/detail");
 		return mav;

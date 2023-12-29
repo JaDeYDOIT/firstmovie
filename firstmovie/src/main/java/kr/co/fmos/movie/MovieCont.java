@@ -1,24 +1,26 @@
 package kr.co.fmos.movie;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Map;
 
+=======
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+<<<<<<< HEAD
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.websocket.Session;
 import kr.co.fmos.member.MemberDAO;
 import kr.co.fmos.member.MemberDTO;
 
+=======
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 @Controller
 @RequestMapping("/movie")
 public class MovieCont {
@@ -52,6 +54,7 @@ public class MovieCont {
 		return mav;
 	}// list() end
 
+<<<<<<< HEAD
 /////////////////////영화 추가 페이지//////////////////////////
 	@GetMapping("/write.do")
 	public String write() {
@@ -113,6 +116,22 @@ public class MovieCont {
 //			String a= movie_id;
 //			String b=req.getParameter("movie_id");
 //			String c=dto.getMovie_id();
+=======
+	@GetMapping("/insert")
+	public String insert() {
+		//로그인 했다면
+//		String s_id="itwill";
+	
+		return "movie/insert";
+	}//list() end
+	
+	
+	/*
+	 * @GetMapping("/list") public String list() { return "movie/list"; }// home()
+	 * end
+	 */
+	
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 
 	// 4)의 전제조건 detail?movie_id 에서 변수명이 동일하다는 전제하에
 

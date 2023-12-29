@@ -36,6 +36,9 @@ public class FirstmovieApplication {
 	      System.out.println("-----sqlSession() 호출됨");
 	      return new SqlSessionTemplate(factory);
 	   }//sqlSession() end
+<<<<<<< HEAD
 	   
 	   
+=======
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 }

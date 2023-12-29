@@ -21,5 +21,9 @@ public class MoviegenreDTO{
 	public String toString() {
 		return "MoviegenreDTO [movie_genre_id=" + movie_genre_id + ", movie_genre_name=" + movie_genre_name + "]";
 	}
+<<<<<<< HEAD:firstmovie/src/main/java/kr/co/fmos/movie/MoviegenreDTO.java
 
 }
+=======
+}
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba:firstmovie/src/main/java/kr/co/fmos/movie/Movie_genreDTO.java

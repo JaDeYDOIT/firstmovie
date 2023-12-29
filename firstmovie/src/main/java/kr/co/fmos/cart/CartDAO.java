@@ -1,10 +1,48 @@
 package kr.co.fmos.cart;
 
+<<<<<<< HEAD
 import org.springframework.stereotype.Repository;
+=======
+<<<<<<< HEAD
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import jakarta.servlet.http.HttpServletRequest;
+=======
+import org.springframework.stereotype.Repository;
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 
 @Repository
 public class CartDAO {
 	public CartDAO() {
 		System.out.println("-----CartDAO()객체 생성됨");
 	}//end
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	
+	@Autowired
+	SqlSession sqlSession;
+	
+	public int cartInsert(CartDTO dto) {
+		return sqlSession.insert("cart.insert", dto);
+	}//cartInsert() end
+	
+	public List<CartDTO> cartList(String member_id) {
+		return sqlSession.selectList("cart.list", member_id);
+		
+	}//list() end
+	
+	public int cartDelete(int payment_detail_id) { 
+		return sqlSession.delete("cart.delete", payment_detail_id); 
+	}//delete() end
+	
+=======
+>>>>>>> e4658eb5cfd7a203a7398e1f231656b1e5f5f888
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 }//class end

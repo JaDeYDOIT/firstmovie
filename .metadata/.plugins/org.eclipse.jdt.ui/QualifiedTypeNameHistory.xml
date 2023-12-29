@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kr.co.fmos.customer.inquire_DTO"/>
+    <fullyQualifiedTypeName name="kr.co.fmos.customer.NoticeDTO"/>
+    <fullyQualifiedTypeName name="kr.co.fmos.customer.NoticeDAO"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="kr.co.fmos.customer.InquireDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+</qualifiedTypeNameHistroy>

@@ -392,7 +392,7 @@
 <!-- 패키지 시작 -->
 <section id="store_wrap">
 	<dt>
-		<a href="#">패키지더보기</a>
+		<a href="/product/category.do?product_category_id=1">패키지     더보기</a>
 	</dt>
 	<dl class='package_list'>
 		<dd>
@@ -406,28 +406,28 @@
 
 		<dd>
 			<div data-scale=false>
-				<img src='images/package/package1.png' alt='우리 패키지'>
+				<img src='images/package/package1.png' alt='좋은 날 패키지'>
 			</div>
 			<div class='giftcon_info_wrap'>
-				<span>우리 패키지</span> <strong>61,000원</strong>
+				<span>좋은 날 패키지</span> <strong>20,000원</strong>
 			</div>
 		</dd>
 
 		<dd>
 			<div data-scale=false>
-				<img src='images/package/package2.png' alt='우리 패키지'>
+				<img src='images/package/package2.png' alt='나랑 너 패키지'>
 			</div>
 			<div class='giftcon_info_wrap'>
-				<span>우리 패키지</span> <strong>61,000원</strong>
+				<span>나랑 너 패키지</span> <strong>34,000원</strong>
 			</div>
 		</dd>
 
 		<dd>
 			<div data-scale=false>
-				<img src='images/package/package3.png' alt='우리 패키지'>
+				<img src='images/package/package4.png' alt='뽀로로 패키지'>
 			</div>
 			<div class='giftcon_info_wrap'>
-				<span>우리 패키지</span> <strong>61,000원</strong>
+				<span>뽀로로 패키지</span> <strong>16,000원</strong>
 			</div>
 		</dd>
 	</dl>
@@ -436,7 +436,7 @@
 	<!-------------------------------------------------관람권 시작----------------------------------------------------->
 	<!-- 관람권 -->
 	<dt>
-		<a href="#">영화관람권더보기</a>
+		<a href="/product/category.do?product_category_id=2">영화관람권 더보기</a>
 	</dt>
 
 	<dl class='giftcon_list'>

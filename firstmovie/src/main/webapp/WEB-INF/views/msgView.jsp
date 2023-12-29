@@ -4,5 +4,20 @@
     <p>${msg1 }</p>
     <p>${msg2 }</p>
     
+<<<<<<< HEAD
     
 <%@ include file="footer.jsp" %> 
+=======
+    <c:if test="${not empty msg2 and msg2 ne 1}">
+	    <script>
+	        window.location.href = '/member/login.do';
+	    </script>
+	</c:if>
+	<c:if test="${empty msg2 or msg2 eq 1}">
+	    <script>
+	        window.location.href = '/main';
+	    </script>
+	</c:if>
+    
+<%@ include file="footer.jsp" %>
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba

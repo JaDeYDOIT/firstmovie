@@ -1,15 +1,17 @@
 package kr.co.fmos.movie;
 
 import java.util.List;
-import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
+<<<<<<< HEAD
 
 import kr.co.fmos.member.MemberDTO;
 
+=======
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 @Repository
 @Controller
 public class MovieDAO {
@@ -22,11 +24,14 @@ public class MovieDAO {
 	@Autowired
 	SqlSession sqlSession;
 
-	// 영화 리스트
 	public List<MovieDTO> movieList() {
 		return sqlSession.selectList("movie.list");
 	}// movieList() end
+//	public MovieDTO movieInsert() {
+//		return sqlSession.insert("movie.insert");
+//	}// movieInsert() end
 
+<<<<<<< HEAD
 	// 영화 추가
 	public int movieinsert(MovieDTO movieDto) {
 		return sqlSession.insert("movie.insert", movieDto);
@@ -58,3 +63,6 @@ public class MovieDAO {
 //	 }// movieList() end
 
 }// class end
+=======
+}
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba

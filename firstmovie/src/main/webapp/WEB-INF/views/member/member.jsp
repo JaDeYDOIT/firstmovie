@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp" %>
-<link rel="stylesheet" href="/css/member.css" />
 
 <script>
 	function member(){
@@ -26,12 +25,12 @@
 		membirth = $(".membirth").val();
 		membirth = membirth.trim();
 		
-		if(memid.length < 5 || memid.length > 15 || memid === null){
+		if(memid.length < 4 || memid.length > 15 || memid === null){
 			alert("아이디는 5~15글자 사이로 작성해주세요");
 			$(".memid").focus();
 			return false;
 			
-		} else if(mempw.length < 5 || mempw.length > 15){
+		} else if(mempw.length < 4 || mempw.length > 15){
 			alert("비밀번호는 5~15글자 사이로 작성해주세요");
 			$(".mempw").focus();
 			return false;

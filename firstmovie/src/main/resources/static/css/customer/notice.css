@@ -2,7 +2,7 @@
 
 table{
 	border: 1px solid black;
-	margin: 50px 0 0 350px;
+	margin: 50px 0 0 290px;
 }
 
 table *{
@@ -44,8 +44,9 @@ table th{
 }
 
 .contentinp {
-	width: 500px;
-	height: 280px;	
+    width: 503px;
+    height: 280px;
+     resize: none;
 }
 
 .button_wrap{
@@ -69,4 +70,8 @@ table th{
 
 .button_wrap input:nth-child(2){
 	background-color: rgb(255, 50, 100);
+}
+
+.inquire_content{
+	text-align: start;
 }

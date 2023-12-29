@@ -15,13 +15,13 @@
    		<div class="category_contents_wrap">
    			<ul class="category_content">
    				<li id="cm1" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=1">패키지</a>
+   					<a href="../product/detail.do">패키지</a>
    				</li>
    				<li id="cm2" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=2">영화관람권</a>
+   					<a href="#">영화관람권</a>
    				</li>
    				<li id="cm3" name="categorymenu">
-   					<a href="/product/category.do?product_category_id=3">콤보</a>
+   					<a href="#">콤보</a>
    				</li>
    				<li id="cm4" name="categorymenu">
    					<a href="#">팝콘</a>
@@ -38,21 +38,20 @@
    			</ul>
    			<ul class="cart_content">
    				<li>
-   					<a href="/cart/list.do">장바구니<span id="cartviewcnt">0</span></a>
+   					<a href="#">장바구니</a>
+   					<span id="cartviewcnt">0</span>
    				</li>
    			</ul>
    		</div>
    	</div>
-   	
    	<!-- category_wrap 끝 -->
 	<!-- category_product_wrap 시작 -->
 	<div>
 		<ul class="category_product_list">
 			<li>
-				<strong class="category_product_title">패키지
-					<a href="/product/category.do?product_category_id=1" class="btn_category_product">  더보기</a>
-				</strong>
+				<strong class="category_product_title">패키지<a href="#" class="btn_category_product">더보기</a></strong>
 				<ul class="category_product_inner_list">
+<<<<<<< HEAD
 				<c:forEach items="${list}" var="row" varStatus="vs">
 					<c:if test="${row.product_category_id == 1}">
 						<li class="active">
@@ -79,28 +78,48 @@
 				<ul class="category_product_inner_list">
 				<c:forEach items="${list}" var="row" varStatus="vs">
 				<c:if test="${row.product_category_id == 2}">
+=======
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 					<li class="active">
-						<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product">
+						<a href="#" class="btn_category_product">
 							<span class="best_product_img_wrap">
+<<<<<<< HEAD
 								<img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/16778218049340.jpg">
 							</span>
+=======
+							<img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/16778218049340.jpg" alt="우리패키지">
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 							<span class="best_product_text_wrap">
-								<span class="best_product_text_name">${row.product_name}</span>
-								<span class="best_product_text_price"><fmt:formatNumber value="${row.product_cost}" pattern="#,###"/></span>
+								<span class="best_product_text_name">우리패키지</span>
+								<span class="best_product_text_price">61,000</span>
+							</span>
+						</a>
+						</li>
+						<li class="active">
+						<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16778214176450.jpg" alt="나랑 너 패키지">
+								<span class="best_product_text_wrap">
+								<span class="best_product_text_name">나랑 너 패키지</span>
+								<span class="best_product_text_price">34,000</span>
+							</span>
+						</a>
+						</li>
+						<li class="active">
+							<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16778214176450.jpg" alt="좋은 날 패키지">
+								<span class="best_product_text_wrap">
+								<span class="best_product_text_name">좋은 날 패키지</span>
+								<span class="best_product_text_price">18,000</span>
 							</span>
 						</a>
 					</li>
-				</c:if>
-				</c:forEach>
 				</ul>
 			</li>
-		</ul>
-		<ul class="category_product_list">
-			<li>
-				<strong class="category_product_title">콤보
-					<a href="/product/category.do?product_category_id=3" class="btn_category_product">더보기</a>
-				</strong>
+			<li><strong class="category_product_title">영화관람권<a href="#" class="btn_category_product">더보기</a></strong>
 				<ul class="category_product_inner_list">
+<<<<<<< HEAD
 				<c:forEach items="${list}" var="row" varStatus="vs">
 					<c:if test="${row.product_category_id == 3}">
 						<li class="active">
@@ -113,9 +132,62 @@
 									<span class="best_product_text_price"><fmt:formatNumber value="${row.product_cost}" pattern="#,###"/></span>
 								</span>
 							</a>
+=======
+					<li class="active">
+						<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15458911951520.jpg" alt="CGV 골드클래스"></span>
+							<span class="best_product_text_wrap">
+								<span class="best_product_text_name">CGV 골드클래스</span>
+								<span class="best_product_text_price">40,000</span>
+							</span>
+						</a>
+>>>>>>> f5a9c1102c00e3f96185315182842f6d7d4b3eba
 						</li>
-					</c:if>
-				</c:forEach>
+						<li class="active">
+							<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16777513183750.jpg" alt="CGV 영화관람권"></span>
+								<span class="best_product_text_wrap">
+								<span class="best_product_text_name">CGV 영화관람권</span>
+								<span class="best_product_text_price">13,000</span>
+							</span>
+						</a>
+						</li>
+						<li class="active">
+							<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15458907780860.jpg" alt="CGV 씨네드쉐프 관람권"></span>
+								<span class="best_product_text_wrap">
+								<span class="best_product_text_name">CGV 씨네드쉐프 관람권</span>
+								<span class="best_product_text_price">50,000</span>
+							</span>
+						</a>
+						</li>
+				</ul>
+			</li>
+			<li><strong class="category_product_title">스낵<a href="#" class="btn_category_product">더보기</a></strong>
+				<ul class="category_product_inner_list">
+					<li class="active">
+						<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16751302789660.jpg" alt="칠리치즈나쵸"></span>
+							<span class="best_product_text_wrap">
+								<span class="best_product_text_name">칠리치즈나쵸</span>
+								<span class="best_product_text_price">4,900</span>
+							</span>
+						</a>
+						</li>
+						<li class="active">
+						<a href="#" class="btn_category_product">
+							<span class="best_product_img_wrap">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15464120856450.jpg" alt="플레인핫도그"></span>
+								<span class="best_product_text_wrap">
+								<span class="best_product_text_name">플레인핫도그</span>
+								<span class="best_product_text_price">4,500</span>
+							</span>
+						</a>
+					</li>
 				</ul>
 			</li>
 		</ul>

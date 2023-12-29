@@ -2,16 +2,21 @@
 
 .logwrap {
   width: 700px;
-  height: 720px;
-  margin: 80px auto;
+  height: 550px;
+  margin: 80px auto 60px auto;
 }
 
 
 
-.logwrap img{
+.logwrap .login {
 	width: 135px;
 	height: 135px;
-	margin: 30px 0 30px 280px;
+	margin: 0 auto;
+
+}
+.logwrap a img{
+	width: 135px;
+	height: 135px;
 	cursor: pointer;
 }
 
@@ -35,18 +40,32 @@
     height: 17px;
 }
 
-.logbox button{
+
+.logbox{
+	display: flex;
+	flex-direction: column;
 	width: 470px;
-	height: 55px;
-	margin: 15px 0 0 115px;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: 500;
-	border: 1px solid gray;
+	margin: 0 auto;
 }
 
-.fmos{
-	background-color: rgb(255, 30, 50);
+.logbox button{
+	width: 100%;
+	height: 70px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+	background-image: url("/images/fmoslogo.png");
+	background-color: white;
+	border: 1.5px solid rgb(200, 200, 200);
+	border-radius: 8px;
+	}
+	
+.logbox a img{
+	margin-top:3%;
+	width: 100%;
+	height: 100%;
+	height: 70px;
 }
 
 .naverbt{
@@ -61,12 +80,15 @@
 	background-color: rgb(230, 230, 0);
 }
 
+.sociallog{
+	width: 470px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	margin-top: 2%;
+}
 
-
-
-
-
-
-
-
-
+.sociallog span{
+	width: 48%;
+}
