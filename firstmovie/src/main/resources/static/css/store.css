@@ -96,9 +96,6 @@
     width: 100%;
 }
 
-#detailfrm {
-	 width: 100%;
-}
 .category_product_detail_title {
     display: block;
     width: 100%;
@@ -108,18 +105,9 @@
     border-bottom: 1px solid #999;
     margin-top: 20px;
 }
-
-.category_product_detail_package{
+.category_product_detail_packege{
 	display: flex;
 }
-
-.btn_category_product > table {
-	width: 900px;
-    border-collapse: collapse;
-    margin: 0 auto;
-    margin-top:50px
-    }
-
 .category_product_detail_img {
 	width: 50%;
 }
@@ -129,22 +117,23 @@
 }
 
 .category_product_detail_txt {
-	width: 25%;
+	width: 50%;
 	margin-top: 10px;
-	font-size: 15px;
+	font-size: 18px;
 }
-
 .category_product_detail_naeyong{
-	width: 20%;
-	font-size: 22px;
+	height: 70%;
+}
+.category_product_detail_naeyong li{
+	padding: 1%;
+	font-size: 18px;
+}
+.category_product_detail_naeyong li:nth-child(1){
+	font-size: 25px;
 	font-weight: bold;
+	
 }
 
-.btn_category_qty{
-    margin-left: 20%;
-    font-size: 22px;
-	font-weight: bold;
-}
 .category_product_button {
 	height: 20%;
 	justify-content: space-around;

@@ -6,7 +6,6 @@
 	padding: 0;
 }
 
-
 li {
 	list-style: none;
 }
@@ -20,6 +19,7 @@ a {
 	width: 70%;
 	margin: 0 auto;
 }
+
 
 /* 헤더 영역 */
 
@@ -35,8 +35,8 @@ header {
 	font-weight: bold;
 	position: fixed;
 	top: 0;
-	z-index: 1;
-	border-bottom: 3px solid red;
+	z-index: 4;
+	border-bottom: 3px solid #22A2F2;;
 	
 }
 
@@ -163,12 +163,11 @@ nav ul li a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
+	z-index: 50;
 	width: 820px;
 	height: 520px;
 	border: 3px solid black;
 	background: white;
-	z-index: 3;
 	display: none;
 }
 
@@ -177,7 +176,6 @@ nav ul li a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
 	width: 800px;
 	height: 500px;
 }
@@ -189,7 +187,6 @@ nav ul li a {
 	top: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.5);
-	z-index: 2;
 	display: none;
 }
 

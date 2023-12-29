@@ -25,4 +25,18 @@ public class ticketingCon {
 		mav.setViewName("ticketing/orderSettlement");
 		return mav;
 	}//home() end
+	
+	@GetMapping("/personseat")
+	public ModelAndView personseat() {
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("ticketing/personseat");
+		return mav;
+	}//home() end
+	
+	@GetMapping("/paysuccess")
+	public ModelAndView paysuccess() {
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("ticketing/paysuccess");
+		return mav;
+	}//home() end
 }

@@ -18,29 +18,17 @@ public class TheaterCont {
 		System.out.println("-----TheaterCont()객체 생성됨");
 	}//TheaterCont() end
 	
-//	@RequestMapping("/list.do")
-//	public ModelAndView list(@RequestParam(value = "region_id", defaultValue = "region_001") String region_id) {
-//		//System.out.println(region_id);
-//		
-//		ModelAndView mav = new ModelAndView();
-//		mav.addObject("region_id", region_id);
-//		mav.addObject("list", theaterdao.regionlist(region_id));
-//		System.out.println(region_id);
-//		mav.setViewName("theater/list");
-//		return mav;
-//	}//list() end
-//	
-
 	@RequestMapping("/list.do")
-	public ModelAndView list( String region_id) {
+	public ModelAndView list(@RequestParam(value = "region_id", defaultValue = "region_001") String region_id) {
 		//System.out.println(region_id);
 		
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("theaterlist", theaterdao.regionlist(region_id));
-		mav.addObject("branchlist", theaterdao.branchlist(region_id));
-		
+		mav.addObject("region_id", region_id);
+		mav.addObject("list", theaterdao.regionlist(region_id));
+		System.out.println(region_id);
 		mav.setViewName("theater/list");
 		return mav;
 	}//list() end
 	
+
 }//class end
