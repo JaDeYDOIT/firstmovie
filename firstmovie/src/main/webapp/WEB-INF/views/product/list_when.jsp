@@ -58,7 +58,7 @@
 					<c:choose>
 				        <c:when test="${row.product_category_id == 1}">
 							<li class="active">
-							<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product">
+								<a href="/product/detail.do?product_id=${row.product_id}" class="btn_category_product">
 								<span class="best_product_img_wrap">
 									<img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/16778218049340.jpg">
 								<%-- <img src="/images/store/${row.product_image}"> --%>

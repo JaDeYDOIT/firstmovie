@@ -26,14 +26,12 @@ public class MemberCont {
 	private MemberDAO memberDao;
 	
 	@GetMapping("/login.do")
-	public ModelAndView list() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("member/login");
-		return mav;
+	public String list() {
+		return "/member/login";
 	}//list() end
 	
 	@GetMapping("/member.do")
-	public String member(HttpSession session) {
+	public String member() {
 		return "/member/member";
 	}
 	
@@ -88,8 +86,7 @@ public class MemberCont {
 			 session.setAttribute("s_pw", dto.getMember_pw()); 
 		 } else {
 			 mav.addObject("msg1", "<script>alert('아이디 혹은 비밀번호가 틀렸습니다.')</script>");
-			 //session.setAttribute("s_id", "guest"); 
-			 //session.setAttribute("s_pw", "guest");
+			 mav.addObject("msg2", check);
 		 }
 		 mav.setViewName("msgView"); 
 		 return mav; 
@@ -105,5 +102,23 @@ public class MemberCont {
 		return mav;
 	}
 	
+	@GetMapping("/social_log")
+	public ModelAndView kakao_log(MemberDTO dto, HttpSession session) {
+		ModelAndView mav = new ModelAndView();
+		int result = memberDao.sMembercheck(dto);
+		System.out.println(result);
+		
+		if(result != 1) {
+			memberDao.sinsert(dto);
+			mav.addObject("msg1", "<script>alert('환영합니다')</script>");
+			session.setAttribute("s_id", dto.getMember_email());
+		} else {
+			mav.addObject("msg1", "<script>alert('환영합니다')</script>");
+			session.setAttribute("s_id", dto.getMember_email());
+	    }
+
+		mav.setViewName("msgView");
+		return mav;
+	}
 	
 }//class end

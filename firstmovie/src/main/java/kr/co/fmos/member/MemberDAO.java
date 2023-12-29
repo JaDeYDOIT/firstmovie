@@ -31,4 +31,12 @@ public class MemberDAO {
 		return sqlSession.selectOne("member.membercheck", dto);
 	}
 	
+	// 카카오 로그인 관련
+	public int sMembercheck(MemberDTO dto){
+		return sqlSession.selectOne("member.smembercheck", dto);
+	}
+	
+	public int sinsert(MemberDTO dto) {
+		return sqlSession.insert("member.sinsert", dto);
+	}//insert() end
 }
