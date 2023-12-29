@@ -1,6 +1,0 @@
-package kr.co.fmos.customer;
-
-public class CustomerDTO {
-
-	private String inquire_id;
-}
