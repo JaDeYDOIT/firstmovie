@@ -5,6 +5,7 @@
 <%@ taglib prefix="fn"  uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
     
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -28,6 +29,8 @@
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
+    <!-- swiperCSS -->	
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- JS -->
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/jquery-3.7.1.min.js"></script>
@@ -37,6 +40,7 @@
 </head>
 
 <body>
+ <div class="headerfill"></div>
     <div id="wrap">
         <header>
             <nav>
@@ -76,7 +80,7 @@
                     <ul class="nav_wrap">
                         <li><a href="/movie/list.do">영화</a></li>
                         <li><a href="/theater/list.do">극장</a></li>
-                        <li><a href="/ticketing/schedule" style="color: red;">예매</a></li>
+                        <li><a href="#" style="color: red;">예매</a></li>
                         <li><a href="/product/list.do">스토어</a></li>
                         <li><a href="#">이벤트</a></li>
                         <li><a href="#">혜택</a></li>
@@ -84,7 +88,8 @@
                 </div>
             </nav>
         </header>
-        <div class="headerfill"></div>
+        
+       
         <!-- header end -->
         
 
