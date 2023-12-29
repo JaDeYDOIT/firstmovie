@@ -1,7 +1,5 @@
 package kr.co.fmos.member;
 
-import org.apache.ibatis.session.SqlSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -31,4 +29,12 @@ public class MemberDAO {
 		return sqlSession.selectOne("member.membercheck", dto);
 	}
 	
+	// 카카오 로그인 관련
+	public int sMembercheck(MemberDTO dto){
+		return sqlSession.selectOne("member.smembercheck", dto);
+	}
+	
+	public int sinsert(MemberDTO dto) {
+		return sqlSession.insert("member.sinsert", dto);
+	}//insert() end
 }

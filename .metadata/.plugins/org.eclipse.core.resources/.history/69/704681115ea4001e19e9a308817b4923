@@ -1,0 +1,13 @@
+package kr.co.fmos.customer;
+
+public class NoticeDTO {
+
+	private int notice_id;
+	private String notice_title;
+	private int notice_type;
+	private String notice_content;
+	private String notice_detetime;
+	private int notice_kind;
+	
+	
+}

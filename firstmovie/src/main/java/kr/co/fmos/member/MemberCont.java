@@ -2,17 +2,8 @@ package kr.co.fmos.member;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-
-import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/member")
@@ -26,14 +17,12 @@ public class MemberCont {
 	private MemberDAO memberDao;
 	
 	@GetMapping("/login.do")
-	public ModelAndView list() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("member/login");
-		return mav;
+	public String list() {
+		return "/member/login";
 	}//list() end
 	
 	@GetMapping("/member.do")
-	public String member(HttpSession session) {
+	public String member() {
 		return "/member/member";
 	}
 	
@@ -88,10 +77,9 @@ public class MemberCont {
 			 session.setAttribute("s_pw", dto.getMember_pw()); 
 		 } else {
 			 mav.addObject("msg1", "<script>alert('아이디 혹은 비밀번호가 틀렸습니다.')</script>");
-			 //session.setAttribute("s_id", "guest"); 
-			 //session.setAttribute("s_pw", "guest");
+			 mav.addObject("msg2", check);
 		 }
-		 mav.setViewName("msgView"); 
+		 mav.setViewName("logmsgView"); 
 		 return mav; 
 	 }
 	 	
@@ -101,9 +89,31 @@ public class MemberCont {
 		mav.addObject("msg1", "<script>alert('로그아웃 되셨습니다.')</script>");
 		session.removeAttribute("s_id");
 		session.removeAttribute("s_pw");
-		mav.setViewName("msgView");
+		mav.setViewName("logmsgView");
 		return mav;
 	}
 	
+	@GetMapping("/social_log")
+	public ModelAndView kakao_log(MemberDTO dto, HttpSession session) {
+		ModelAndView mav = new ModelAndView();
+		int result = memberDao.sMembercheck(dto);
+		System.out.println(result);
+		
+		if(result != 1) {
+			memberDao.sinsert(dto);
+			mav.addObject("msg1", "<script>alert('환영합니다')</script>");
+			session.setAttribute("s_id", dto.getMember_email());
+		} else {
+			mav.addObject("msg1", "<script>alert('환영합니다')</script>");
+			session.setAttribute("s_id", dto.getMember_email());
+	    }
+
+		mav.setViewName("logmsgView");
+		return mav;
+	}
 	
+	@GetMapping("/test.do")
+	public String test() {
+		return "/member/test";
+	}
 }//class end

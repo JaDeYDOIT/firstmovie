@@ -20,7 +20,4 @@ public class Movie_genreDTO {
 	public String toString() {
 		return "MovieDTO [movie_genre_id=" + movie_genre_id + ", movie_genre_name=" + movie_genre_name + "]";
 	}
-
-	
-
 }

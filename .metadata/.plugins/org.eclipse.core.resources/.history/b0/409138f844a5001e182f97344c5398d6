@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="../header.jsp" %>
+<link rel="stylesheet" href="/css/customer/notice.css" />
+
+ <table>
+ 	<form method="post" action="/customer/test.do"></form>
+ </table>
+ 	<div class="button_wrap">
+		<input type="button" value="등록하기"> 	
+		<input type="button" value="취소하기">
+	</div>
+<%@ include file="../footer.jsp" %>

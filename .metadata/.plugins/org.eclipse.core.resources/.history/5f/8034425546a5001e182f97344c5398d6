@@ -1,0 +1,26 @@
+package kr.co.fmos.customer;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import kr.co.fmos.member.MemberDTO;
+import kr.co.fmos.movie.MoviereviewDTO;
+
+@Repository
+public class TestDAO {
+
+	public TestDAO() {
+		System.out.println("-----noticeDAO()객체 생성됨");
+	}//end
+	
+	@Autowired
+	SqlSession sqlSession;
+	
+	public int testInsert(String sum) {
+		return sqlSession.insert("customer.noticeinsert", dto);
+	}//insert() end
+	
+}

@@ -26,6 +26,7 @@
 			<h2 class="hidden">예매하기</h2>
 			<div class="section_step_tit">
 				<ul>
+<<<<<<< HEAD
 					<li class="step01 prev"><a href="/ticketing/schedule"><strong class="tit"><span>01</span><br>상영시간</strong>
 							<div class="bx_con">
 								<dl>
@@ -59,6 +60,14 @@
 									<dd>18,000원</dd>
 								</dl>
 							</div></a></li>
+=======
+					<li class="step01 prev"><a href="#"><strong class="tit"><span>01</span><br>상영시간</strong>
+					</a></li>
+					<li class="step02 prev"><a href="#"><strong class="tit"><span>02</span><br>인원/좌석</strong>
+					</a></li>
+					<li class="step03 active"><a href="#"><strong class="tit"><span>03</span><br>결제</strong>
+					</a></li>
+>>>>>>> 7935f7d48dc1bcb8f29590517169f2f2e8f05cf0
 					<li><a href="#" style="cursor: default;"><strong
 							class="tit"><span>04</span><br>결제완료</strong></a></li>
 				</ul>
@@ -105,7 +114,6 @@
 				<div class="article article_pay_method">
 					<div class="group_top">
 						<h4 class="tit">결제수단</h4>
-						<button type="button" class="btn_txt_reset">초기화</button>
 					</div>
 					<div class="inner">
 						<div class="group_discount" style="display: block;">

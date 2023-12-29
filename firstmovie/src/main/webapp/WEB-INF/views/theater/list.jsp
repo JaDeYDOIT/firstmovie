@@ -512,6 +512,5 @@
 			<li class="wrap_nav_underline"><span class="nav_underline"></span></li>
 		</ul>
 	</div>
-	<!--// theater-main -->
 </div>
-<%@ include file="../footer.jsp"%>
+		<%@ include file="../footer.jsp"%>
